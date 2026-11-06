@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Akshatha | Portfolio</title>
+  <meta name="description" content="Portfolio of Akshatha: developer, builder, problem solver.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <div class="cursor-glow" id="glow"></div>
+
+  <div class="bg" aria-hidden="true">
+    <span class="blob b1"></span>
+    <span class="blob b2"></span>
+    <span class="blob b3"></span>
+  </div>
+
+  <header class="site-header" id="header">
+    <nav class="container nav">
+      <a class="brand" href="#home">Akshatha<span>.</span></a>
+      <ul class="links" id="links">
+        <li><a href="#home" data-section="home">Home</a></li>
+        <li><a href="#about" data-section="about">About</a></li>
+        <li><a href="#services" data-section="services">Skills</a></li>
+        <li><a href="#projects" data-section="projects">Projects</a></li>
+        <li><a href="#contact" data-section="contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">🌓</button>
+        <button id="burger" class="icon-btn burger" aria-label="Open menu" aria-expanded="false">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero container">
+      <p class="eyebrow reveal">👋 Hi, I'm Akshatha</p>
+      <h1 class="reveal">I build <span class="gradient-text" id="typed"></span><span class="caret">|</span></h1>
+      <p class="lead reveal">Developer focused on clean code, thoughtful design and projects that solve real problems.</p>
+      <div class="cta reveal">
+        <a class="btn primary" href="#projects">View my work</a>
+        <a class="btn ghost" href="#contact">Get in touch</a>
+      </div>
+    </section>
+
+    <!-- ABOUT / STATS -->
+    <section id="about" class="container section">
+      <h2 class="section-title reveal">About <span class="gradient-text">me</span></h2>
+      <div class="about-grid">
+        <p class="reveal about-text">
+          I'm a student developer who loves turning ideas into working software.
+          I enjoy Java, computer vision and building clean, responsive interfaces.
+          Replace this paragraph with your own story.
+        </p>
+        <div class="stats">
+          <div class="card stat reveal"><strong data-target="10" data-suffix="+">0</strong><span>Projects</span></div>
+          <div class="card stat reveal"><strong data-target="5" data-suffix="+">0</strong><span>Technologies</span></div>
+          <div class="card stat reveal"><strong data-target="100" data-suffix="%">0</strong><span>Curiosity</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="services" class="container section">
+      <h2 class="section-title reveal">What I <span class="gradient-text">do</span></h2>
+      <div class="grid">
+        <article class="card reveal">
+          <div class="icon">⚡</div>
+          <h3>Fast</h3>
+          <p>Lightweight code with no heavy frameworks and no build step.</p>
+        </article>
+        <article class="card reveal">
+          <div class="icon">📱</div>
+          <h3>Responsive</h3>
+          <p>Layouts that look great on phones, tablets and desktops.</p>
+        </article>
+        <article class="card reveal">
+          <div class="icon">🎨</div>
+          <h3>Designed</h3>
+          <p>Modern visuals, smooth motion and attention to detail.</p>
+        </article>
+        <article class="card reveal">
+          <div class="icon">🚀</div>
+          <h3>Deployable</h3>
+          <p>Every push to GitHub goes live automatically.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="container section">
+      <h2 class="section-title reveal">Featured <span class="gradient-text">projects</span></h2>
+      <div class="grid projects">
+        <a class="card project reveal" href="#" target="_blank" rel="noopener">
+          <span class="tag">Java · OpenCV</span>
+          <h3>Silent Signal</h3>
+          <p>Emergency hand-gesture detection system using camera-based image processing.</p>
+          <span class="more">View on GitHub →</span>
+        </a>
+        <a class="card project reveal" href="#" target="_blank" rel="noopener">
+          <span class="tag">HTML · CSS · JS</span>
+          <h3>This Portfolio</h3>
+          <p>A fast, animated static site deployed with GitHub Pages.</p>
+          <span class="more">View on GitHub →</span>
+        </a>
+        <a class="card project reveal" href="#" target="_blank" rel="noopener">
+          <span class="tag">Your stack</span>
+          <h3>Next Project</h3>
+          <p>Add a short description of your next project here.</p>
+          <span class="more">View on GitHub →</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="container section">
+      <h2 class="section-title reveal">Let's <span class="gradient-text">talk</span></h2>
+      <form class="card form reveal" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <label>Name<input type="text" name="name" required placeholder="Your name"></label>
+        <label>Email<input type="email" name="email" required placeholder="you@example.com"></label>
+        <label>Message<textarea name="message" rows="5" required placeholder="Say hello..."></textarea></label>
+        <button class="btn primary" type="submit">Send message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>&copy; <span id="year"></span> Akshatha. Built with HTML, CSS &amp; JS.</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
